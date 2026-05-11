@@ -1,91 +1,43 @@
 <svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
-      
-      @keyframes float {
-        0%, 100% { transform: translateY(0) rotate(0deg); }
-        33% { transform: translateY(-10px) rotate(1deg); }
-        66% { transform: translateY(5px) rotate(-1deg); }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.6; transform: scale(1); }
-        50% { opacity: 1; transform: scale(1.08); }
-      }
-      @keyframes orbit {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: -100; }
-      }
-      
-      .floating { animation: float 6s ease-in-out infinite; }
-      .pulsing { animation: pulse 3s ease-in-out infinite; }
-      .orbit-path { animation: orbit 30s linear infinite; transform-origin: center; }
-      .dash-anim { stroke-dasharray: 5, 15; animation: dash 5s linear infinite; }
-      .text-main { font-family: 'Outfit', sans-serif; font-weight: 600; }
-      .text-sub { font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 12px; opacity: 0.7; }
-    </style>
-    
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-    
-    <radialGradient id="gradTS" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#3178C6" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#3178C6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="gradNext" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    .floating { animation: float 4s ease-in-out infinite; }
+    .pulsing { animation: pulse 3s ease-in-out infinite; }
+    .text { font-family: sans-serif; font-weight: bold; }
+  </style>
 
-  <!-- Canvas Background -->
-  <rect width="800" height="400" fill="#FCFCFE"/>
+  <!-- Canvas -->
+  <rect width="800" height="400" fill="white"/>
 
-  <!-- Orbits and Connections -->
-  <g transform="translate(400, 200)">
-    <ellipse cx="0" cy="0" rx="300" ry="120" stroke="#E2E8F0" stroke-width="1.5" fill="none" class="dash-anim"/>
-    <ellipse cx="0" cy="0" rx="220" ry="90" stroke="#CBD5E1" stroke-width="1" fill="none" class="dash-anim" style="animation-direction: reverse;"/>
-    
-    <!-- Orbiting particles -->
-    <g class="orbit-path">
-      <circle cx="300" cy="0" r="4" fill="#3178C6" filter="url(#glow)"/>
-      <circle cx="-220" cy="0" r="3" fill="#2DD4BF" filter="url(#glow)"/>
-    </g>
-  </g>
+  <!-- Orbits -->
+  <ellipse cx="400" cy="200" rx="280" ry="100" stroke="#E2E8F0" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+  <ellipse cx="400" cy="200" rx="220" ry="120" stroke="#E2E8F0" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
 
   <!-- TypeScript Node -->
-  <g class="floating" transform="translate(220, 200)">
-    <circle cx="0" cy="0" r="100" fill="url(#gradTS)"/>
-    <path d="M-40,-70 L40,-70 L80,0 L40,70 L-40,70 L-80,0 Z" fill="white" stroke="#3178C6" stroke-width="2.5" filter="url(#glow)"/>
-    <text x="0" y="15" text-anchor="middle" fill="#1E293B" font-size="36" class="text-main">TS</text>
-    <text x="0" y="95" text-anchor="middle" fill="#64748B" class="text-sub">TYPESCRIPT</text>
+  <g class="floating" style="animation-delay: 0s;">
+    <path d="M160,150 L240,150 L280,200 L240,250 L160,250 L120,200 Z" fill="#F7F7F7" stroke="#3178C6" stroke-width="2"/>
+    <text x="200" y="210" text-anchor="middle" fill="#3178C6" font-size="30" class="text">TS</text>
+    <text x="200" y="275" text-anchor="middle" fill="#94A3B8" font-size="12" class="text">TypeScript</text>
   </g>
 
   <!-- Next.js Node -->
-  <g class="floating" transform="translate(580, 200)" style="animation-delay: -3s;">
-    <circle cx="0" cy="0" r="100" fill="url(#gradNext)"/>
-    <path d="M-40,-70 L40,-70 L80,0 L40,70 L-40,70 L-80,0 Z" fill="white" stroke="#0F172A" stroke-width="2.5" filter="url(#glow)"/>
-    <text x="0" y="12" text-anchor="middle" fill="#0F172A" font-size="28" class="text-main">NEXT</text>
-    <text x="0" y="95" text-anchor="middle" fill="#64748B" class="text-sub">NEXT.JS FRAMEWORK</text>
+  <g class="floating" style="animation-delay: 1s;">
+    <path d="M560,150 L640,150 L680,200 L640,250 L560,250 L520,200 Z" fill="#F7F7F7" stroke="#000000" stroke-width="2"/>
+    <text x="600" y="210" text-anchor="middle" fill="#000000" font-size="24" class="text">NEXT</text>
+    <text x="600" y="275" text-anchor="middle" fill="#94A3B8" font-size="12" class="text">Next.js</text>
   </g>
 
   <!-- Central AI Hub -->
-  <g transform="translate(400, 200)">
-    <circle r="50" fill="white" filter="url(#glow)"/>
-    <circle r="40" fill="#1E293B" class="pulsing"/>
-    <text y="7" text-anchor="middle" fill="white" font-size="18" class="text-main">IA</text>
-    
-    <!-- Outer energy ring -->
-    <circle r="55" stroke="#3178C6" stroke-width="1" fill="none" opacity="0.4" class="pulsing"/>
+  <g class="pulsing">
+    <circle cx="400" cy="200" r="40" fill="#1E293B"/>
+    <text x="400" y="206" text-anchor="middle" fill="white" font-size="18" class="text">IA</text>
+    <circle cx="400" cy="200" r="50" stroke="#1E293B" stroke-width="1" fill="none" opacity="0.3"/>
   </g>
-
-  <!-- Accent elements -->
-  <circle cx="150" cy="100" r="2" fill="#CBD5E1"/>
-  <circle cx="650" cy="300" r="2" fill="#CBD5E1"/>
-  <circle cx="700" cy="80" r="3" fill="#3178C6" opacity="0.3"/>
 </svg>

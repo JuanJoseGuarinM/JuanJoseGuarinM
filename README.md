@@ -1,7 +1,7 @@
 # ¡Hola! Soy Juan José Guarín Medina 👋
 
 <p align="center">
-  <img src="./animation.svg" width="800" alt="TS-IA-NEXT Premium Animation" />
+  <img src="https://raw.githubusercontent.com/JuanJoseGuarinM/JuanJoseGuarinM/main/animation.svg" width="800" alt="TS-IA-NEXT Premium Animation" />
 </p>
 
 ---
