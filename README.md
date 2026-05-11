@@ -1,7 +1,7 @@
 # ¡Hola! Soy Juan José Guarín Medina 👋
 
 <p align="center">
-  <img src="https://github.com/JuanJoseGuarinM/JuanJoseGuarinM/blob/main/animation.svg?raw=true" width="800" />
+  <img src="https://github.com/JuanJoseGuarinM/JuanJoseGuarinM/blob/main/animation.svg?raw=true&v=black_theme" width="800" />
 </p>
 
 ---
