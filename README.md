@@ -56,6 +56,4 @@ Actualmente soy estudiante en **Riwi**, un ecosistema de entrenamiento intensivo
   <a href="mailto:guarinmedinaj@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" height="30" /></a>
 </p>
 
-<p align="center">
-  <i>"El código es poesía en movimiento."</i>
-</p>
+
