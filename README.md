@@ -1,7 +1,7 @@
 # ¡Hola! Soy Juan José Guarín Medina 👋
 
 <p align="center">
-  <img src="https://github.com/JuanJoseGuarinM/JuanJoseGuarinM/blob/main/animation.svg?raw=true&v=elegant_bw" width="800" />
+  <img src="animation.svg" width="800" />
 </p>
 
 ---
@@ -13,6 +13,12 @@
 - 🔭 Actualmente Estudiando en proyectos de TypeScript, Next.js y React con integraciones de **Inteligencia Artificial**.
 - 🌱 Perfeccionando mis habilidades en **TypeScript**, **Next.js** y **React**.
 - ☁️ Explorando el mundo de **Docker** y el despliegue de microservicios.
+
+### 🎓 Formación en Riwi
+
+Actualmente soy estudiante en **Riwi**, un ecosistema de entrenamiento intensivo donde he potenciado mis habilidades técnicas y socioemocionales. ¡Estoy agradecido con Riwi de por vida! Han sido fundamentales para consolidar mis conocimientos en desarrollo de software y dominar el stack que utilizo hoy en día. 🚀🏆
+
+---
 
 ### 💼 Experiencia Laboral
 
