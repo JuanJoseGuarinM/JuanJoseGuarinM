@@ -10,9 +10,9 @@
 
 ¡Mucho gusto! Soy un apasionado desarrollador Junior nacido el **13 de junio de 2006**. Mi enfoque principal es crear soluciones digitales eficientes, elegantes y escalables. Actualmente soy **Tecnólogo en Análisis y Desarrollo de Software** egresado del **SENA**.
 
-- 🔭 Actualmente Estudiando en proyectos de TypeScript, Next.js y React con integraciones de **Inteligencia Artificial**.
-- 🌱 Perfeccionando mis habilidades en **TypeScript**, **Next.js** y **React**.
-- ☁️ Explorando el mundo de **Docker** y el despliegue de microservicios.
+-  Actualmente Estudiando en proyectos de TypeScript, Next.js y React con integraciones de **Inteligencia Artificial**.
+-  Perfeccionando mis habilidades en **TypeScript**, **Next.js** y **React**.
+-  Explorando el mundo de **Docker** y el despliegue de microservicios.
 
 ### 🎓 Formación en Riwi
 
