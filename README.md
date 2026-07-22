@@ -1,4 +1,4 @@
-# ¡Hola! Soy Juan José Guarín Medina 👋
+# ¡Hola! Soy Juan José Guarín Medina 
 
 <p align="center">
   <img src="animation.svg" width="800" />
@@ -6,7 +6,7 @@
 
 ---
 
-### 🚀 Sobre Mí
+###  Sobre Mí
 
 ¡Mucho gusto! Soy un apasionado desarrollador Junior nacido el **13 de junio de 2006**. Mi enfoque principal es crear soluciones digitales eficientes, elegantes y escalables. Actualmente soy **Tecnólogo en Análisis y Desarrollo de Software** egresado del **SENA**.
 
